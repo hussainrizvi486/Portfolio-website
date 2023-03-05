@@ -1,0 +1,297 @@
+@media screen and (max-width: 786px) {
+    nav {
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .nav-items {
+            display: none;
+        }
+
+        .email-btn {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: block;
+            z-index: 100;
+        }
+
+
+    }
+
+    #home {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        section {
+            &:first-of-type {
+                padding: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                &:nth-child(1) {
+                    padding-top: 2rem;
+
+                    h1 {
+                        font-size: 2.8rem;
+                    }
+                }
+
+
+                .typewriterpara {
+                    font-size: 15px;
+                }
+
+                .icons-bar {
+                    left: 3%;
+                    bottom: 8%;
+
+                    svg {
+                        font-size: 3vmax;
+                    }
+                }
+
+            }
+
+
+            &:last-of-type {
+                height: 70%;
+                display: flex;
+                justify-content: center;
+
+
+                img {
+                    width: 40vmax;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .pg-down-arrow {
+            font-size: 2rem;
+            bottom: 2%;
+        }
+    }
+
+    #about {
+        height: 125vh;
+        display: flex;
+        flex-direction: column;
+
+        >section {
+            width: 100%;
+
+            &:first-of-type {
+                width: 100%;
+                padding: 0 5%;
+
+                >div {
+                    margin: 4vmax 0 0 0vmax;
+
+                    >h1 {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        font-family: Poppins, 'Roboto', sans-serif;
+                    }
+
+                    >h3 {
+                        margin-top: 10%;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                width: 100%;
+                margin: 0;
+            }
+
+        }
+    }
+
+    #skills {
+        height: auto;
+        flex-direction: column;
+
+        section {
+            height: 100%;
+
+            &:first-of-type {
+                width: 100%;
+
+                >div {
+                    margin-top: 3rem;
+
+                    >h1 {
+                        font-size: 2rem;
+                        font-weight: 700;
+                        font-family: Poppins, 'Roboto', sans-serif;
+                    }
+
+                    p {
+                        font-size: small;
+                    }
+
+                }
+            }
+
+            &:last-of-type {
+                width: 100%;
+                padding: 10% 2%;
+
+                .card-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+
+                    >div {
+                        border-radius: 5px;
+                        background: #dbb9a08f;
+                        padding: 2%;
+
+                        h3 {
+                            margin: 1% 0;
+                        }
+                    }
+
+                    .skill-card-1 {
+                        height: auto;
+                        width: 100%;
+                    }
+
+                    .skill-card-2 {
+                        height: auto;
+                        width: 100%;
+                    }
+
+                    .skill-card-3 {
+                        height: auto;
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #home {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        section {
+            &:first-of-type {
+
+                &:nth-child(1) {
+
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                }
+
+                .icons-bar {
+                    gap: 1.8rem;
+                    left: 1%;
+                    bottom: 3%;
+
+                    svg {
+                        font-size: 2.5vmax;
+                    }
+                }
+            }
+        }
+
+        .pg-down-arrow {
+            font-size: 2rem;
+            bottom: 2%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    nav {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    #home>section {
+        &:first-of-type {
+
+            &:nth-child(1) {
+                h1 {
+                    font-size: 2.3rem;
+                }
+            }
+
+
+        }
+    }
+
+
+    #about {
+        section:last-of-type {
+            padding: 30% 0 0 0;
+        }
+    }
+
+    #skills {
+        .card-wrapper>div {
+            padding: 4% 2% !important;
+
+            h3 {
+                margin: 2% 0;
+            }
+        }
+
+    }
+
+    #contact {
+        height: 90vh;
+        padding-top: 20%;
+
+        >form {
+            height: 80vh;
+            width: 100%;
+            margin: 10% auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            box-shadow: none;
+            background: transparent;
+
+            >h2 {
+                font-size: 1.8rem;
+                margin-bottom: 20%;
+            }
+
+            >input {
+                margin: 2% 0;
+            }
+
+            >textarea {
+                margin: 5% 0;
+            }
+
+            >button {
+                margin: 5% auto;
+                height: 2rem;
+                letter-spacing: 1px;
+                font-weight: 500;
+                transition: all 200ms;
+
+            }
+        }
+    }
+}

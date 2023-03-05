@@ -1,0 +1,87 @@
+#skills {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10% 1%;
+    display: flex;
+
+    section {
+        height: 100%;
+
+        &:first-of-type {
+            width: 40%;
+            padding: 0 2%;
+
+            >div {
+                margin-top: 3rem;
+
+                >h1 {
+                    font-size: 2rem;
+                    font-weight: 900;
+                    color: $color_coffee;
+                    font-family: 'Poppins';
+                }
+
+                >p {
+                    margin-top: 3%;
+                    color: $color_coffee;
+                }
+            }
+        }
+
+        &:last-of-type {
+            width: 60%;
+            padding: 4% 5%;
+
+
+            .card-wrapper {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                transition: all 100ms;
+
+
+                >div {
+                    border-radius: 5px;
+                    padding: 2%;
+                    background: #dbb89f59;
+
+                    >h3 {
+                        margin: 3% 0;
+                        font-family: 'Poppins';
+                        font-size: medium;
+                        color: $color_coffee;
+                    }
+
+                    >p {
+                        font-size: small;
+                        font-family: 'Poppins';
+                        color: $color_coffee;
+                    }
+                }
+
+                .skill-card-1 {
+                    width: 48%;
+                    height: 15rem;
+                }
+
+                .skill-card-2 {
+                    width: 48%;
+                    height: 15rem;
+                }
+
+                .skill-card-3 {
+                    width: 97%;
+                    height: 10rem;
+                    padding: 4% 2%;
+                    text-align: center;
+
+                    >h3 {
+                        margin: 1% 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

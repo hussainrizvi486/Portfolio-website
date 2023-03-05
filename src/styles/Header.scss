@@ -1,0 +1,116 @@
+nav {
+    height: 10vh;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+    background: #fef2f2c9;
+    backdrop-filter: blur(5px);
+
+    >h2 {
+        color: #322222;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .nav-items {
+        display: flex;
+        gap: 2rem;
+
+        >a {
+            font-family: $text3;
+            color: $color6_1;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $color3;
+            }
+        }
+    }
+
+    >.email-btn {
+        padding: .4rem 1.8rem;
+        background-color: $color1;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border: 1px solid $color6_1;
+        border-radius: 3px;
+        color: $color_coffee;
+        transition: all 200ms;
+        cursor: pointer;
+        font-size: small;
+
+        &:hover {
+            background-color: $color_coffee;
+            color: #ffffff;
+        }
+    }
+
+
+    .mobile-menu {
+        display: none;
+
+        svg {
+            color: #000;
+            font-size: 2rem;
+        }
+    }
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 15vmax 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fef2f2ee;
+    z-index: 10;
+    transform: translateY(-200%);
+    transition: all 0.5s;
+
+    h2 {
+        color: #322222;
+        font-family: "Poppins", sans-serif;
+    }
+
+    a {
+        font-family: "Righteous", sans-serif;
+        color: rgba(22, 22, 22, 0.5960784314);
+        transition: all 0.3s;
+    }
+
+    div {
+        width: 100%;
+        margin: 6vmax 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    button {
+        margin-top: 5vmax;
+        padding: .5rem 2rem;
+        background-color: #523e3e;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border: 1px solid $color6_1;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}
+
+
+.open-mobile-nav {
+    transform: translateY(0);
+}
